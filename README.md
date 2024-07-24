@@ -9,7 +9,7 @@ Building
 -------
 
 ```
-git clonehttps://github.com/Lokfid/WeatherChangingPlugin
+git clone https://github.com/Lokfid/WeatherChangingPlugin
 cd WeatherChangingPlugin
 ./gradlew build
 ```
