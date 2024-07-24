@@ -40,15 +40,13 @@ public class WeatherModule extends ToggleableModule {
 
 			} else if (weather.getValue() == Weather.Clear) {
 				mc.level.setRainLevel(0F);
-				return;
+
 			}
 			else if (weather.getValue() == Weather.Thunder){
 				mc.level.setRainLevel(WeatherGradient.getValue().floatValue());
 				mc.level.setThunderLevel(1F);
 			}
-			else{
-				return;
-			}
+
 		}
 	}
 
