@@ -1,0 +1,12 @@
+{
+  "Plugin-Class": "org.Lokfid.WeatherPlugin",
+  "Name": "Weather Plugin",
+  "Version": "${plugin_version}",
+  "Description": "Weather Changing rusherhack plugin",
+  "Authors": [
+    "Lokfid"
+  ],
+  "Minecraft-Versions": [
+    "1.20.4"
+  ]
+}
