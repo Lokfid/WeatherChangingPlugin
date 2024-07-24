@@ -11,7 +11,7 @@ import org.rusherhack.core.event.stage.Stage;
 /**
  * Weather Changing Plugin
  *
- * @author Lokfidd
+ * @author Lokfid
  */
 @SuppressWarnings("unused")
 public class WeatherModule extends ToggleableModule {
