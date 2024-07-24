@@ -16,7 +16,7 @@ import org.rusherhack.core.event.stage.Stage;
 @SuppressWarnings("unused")
 public class WeatherModule extends ToggleableModule {
 
-	private enum Weather {Clear,Rain}
+	private enum Weather {Clear,Rain,Thunder}
 	private final EnumSetting<Weather> weather = new EnumSetting<>("Weather","Which weather do you want",Weather.Clear);
 	private final NumberSetting<Double> WeatherGradient = new NumberSetting<>("WeatherLevel", 0.0, 0.0, 1.0)
 			.incremental(0.1);
@@ -40,6 +40,13 @@ public class WeatherModule extends ToggleableModule {
 
 			} else if (weather.getValue() == Weather.Clear) {
 				mc.level.setRainLevel(0F);
+				return;
+			}
+			else if (weather.getValue() == Weather.Thunder){
+				mc.level.setRainLevel(WeatherGradient.getValue().floatValue());
+				mc.level.setThunderLevel(1F);
+			}
+			else{
 				return;
 			}
 		}
